@@ -25,7 +25,7 @@ function Navbar() {
   );
   return (
     <div className="max-w-screen-2x1 container mx-auto md:px-8 px-4">
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 mb-0">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -102,7 +102,7 @@ function Navbar() {
             </label>
           </div>
           <div>
-            <a className="btn ml-2 bg-green-800 text-black hover:bg-green-900">
+            <a className="btn ml-2 bg-green-500 text-black hover:bg-green-900">
               Search
             </a>
           </div>
