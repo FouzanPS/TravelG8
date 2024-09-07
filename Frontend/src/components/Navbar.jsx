@@ -51,7 +51,7 @@ function Navbar() {
               {NavItem}
             </ul>
           </div>
-          <a className="cursor-pointer text-3xl ml-5 font-black bold font-bold">
+          <a className="cursor-pointer text-3xl ml-5 font-black bold">
             TravelG8
           </a>
         </div>

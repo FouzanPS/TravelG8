@@ -45,8 +45,6 @@
     gap: 20px;
     overflow-x: auto;
     padding-bottom: 10px;
-    justify-content: center; /* Center the cards horizontally */
-    align-items: center; /* Center the cards vertically */
   }
   
   .destination-image {
