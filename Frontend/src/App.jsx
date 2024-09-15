@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Parallax from "./components/parallax";
 import Guides from "./components/Guides";
+import Itineraries from "./components/Itineraries";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <Parallax />
         <Guides />
+        <Itineraries />
       </div>
     </>
   );
