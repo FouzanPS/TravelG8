@@ -1,4 +1,14 @@
 import React from "react";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+} from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 function Navbar() {
   const NavItem = (
@@ -23,9 +33,10 @@ function Navbar() {
       </li>
     </>
   );
+
   return (
     <div className="max-w-screen-2x1 container mx-auto md:px-8 px-4">
-      <div className="navbar bg-base-100 mb-0 fixed top-0 left-0 right-0 z-50">
+      <div className="navbar bg-base-100 mb-0 fixed top-0 left-0 right-0 z-50 flex justify-center">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,29 +66,15 @@ function Navbar() {
             TravelG8
           </a>
         </div>
+
+        {/* Centered Navbar items */}
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 text-lg font-semibold">
+            {NavItem}
+          </ul>
+        </div>
+
         <div className="navbar-end">
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 text-lg font-semibold">
-              {NavItem}
-            </ul>
-          </div>
-          <div className="hidden md:block">
-            <label className="input input-bordered flex items-center gap-2">
-              <input type="text" className="grow" placeholder="Search" />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                className="h-4 w-4 opacity-70"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </label>
-          </div>
           <div className="mx-2 md:mt-2">
             <label className="swap swap-rotate">
               <input
@@ -101,11 +98,48 @@ function Navbar() {
               </svg>
             </label>
           </div>
-          <div>
-            <a className="btn ml-2 bg-green-500 text-black hover:bg-green-900 mr-9">
-              Search
-            </a>
-          </div>
+          <Menu as="div" className="relative ml-3 mr-7">
+            <div>
+              <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <span className="absolute -inset-1.5" />
+                <span className="sr-only">Open user menu</span>
+                <img
+                  alt=""
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  className="h-8 w-8 rounded-full shadow-md"
+                />
+              </MenuButton>
+            </div>
+            <MenuItems
+              transition
+              className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+            >
+              <MenuItem>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
+                >
+                  Your Profile
+                </a>
+              </MenuItem>
+              <MenuItem>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
+                >
+                  Settings
+                </a>
+              </MenuItem>
+              <MenuItem>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
+                >
+                  Sign out
+                </a>
+              </MenuItem>
+            </MenuItems>
+          </Menu>
         </div>
       </div>
     </div>
