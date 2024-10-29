@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Parallax from "./components/parallax";
 import Guides from "./components/Guides";
 import Itineraries from "./components/Itineraries";
+import Booking from "./components/Booking";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Parallax />
         <Guides />
         <Itineraries />
+        <Booking />
       </div>
     </>
   );

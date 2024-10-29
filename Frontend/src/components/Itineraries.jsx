@@ -61,17 +61,17 @@ export default function Itineraries() {
           {destinations.map((d, index) => (
             <div
               key={index}
-              className="min-w-[80%] max-w-[80%] flex-shrink-0 bg-white rounded-lg shadow-lg mr-9"
+              className="relative min-w-[80%] max-w-[80%] flex-shrink-0 rounded-lg shadow-lg overflow-hidden mr-9 group"
             >
               <img
                 src={d.image}
                 alt={d.name}
-                className="w-full h-40 object-cover rounded-t-lg"
+                className="w-full h-40 object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-40"
               />
-              <div className="p-4">
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 className="text-xl font-bold text-black">{d.name}</h3>
-                <p className="text-sm text-gray-600">{d.description}</p>
-                <button className="btn mt-2 bottom-1 bg-black text-gray-300">
+                <p className="text-sm text-gray-600 mt-2">{d.description}</p>
+                <button className="btn mt-4 bg-black text-gray-300">
                   Book Now
                 </button>
               </div>

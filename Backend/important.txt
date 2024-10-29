@@ -1,0 +1,3 @@
+mohammedfouzanmsd7
+rM6EOcwauegmTlXB
+mongodb+srv://mohammedfouzanmsd7:<db_password>@traveldetail.08dj3.mongodb.net/?retryWrites=true&w=majority&appName=travelDetail
