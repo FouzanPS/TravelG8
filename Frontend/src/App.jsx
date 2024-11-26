@@ -11,7 +11,6 @@ function App() {
       <div>
         <Navbar />
         <Parallax />
-        <Guides />
         <Itineraries />
         <Booking />
       </div>

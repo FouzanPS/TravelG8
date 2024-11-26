@@ -7,31 +7,31 @@ export default function Itineraries() {
     {
       name: "Paris",
       image:
-        "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/03/1c/9c.jpg",
+        "https://images.unsplash.com/photo-1522582324369-2dfc36bd9275?q=80&w=2504&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description: `The beautiful city of Paris during the sunset, with the Eiffel Tower standing tall, casting its golden reflection over the Seine. Explore charming streets and indulge in French delicacies.`,
     },
     {
       name: "Tokyo",
       image:
-        "https://media.cntraveler.com/photos/63482b255e7943ad4006df0b/16:9/w_2240,c_limit/tokyoGettyImages-1031467664.jpeg",
+        "https://images.unsplash.com/photo-1493515211228-6c03db55b9ca?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description: `Immerse yourself in Tokyo’s vibrant nightlife, where bright lights and towering billboards illuminate the bustling streets. Experience the energy of a city that never sleeps.`,
     },
     {
       name: "Bali",
       image:
-        "https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: `Discover Bali’s serene beauty with a stunning temple rising against mist-covered green hills. Embrace nature and spirituality in this perfect escape, where breathtaking landscapes await your visit.`,
     },
     {
       name: "Dubai",
       image:
-        "https://www.canvasartrocks.com/cdn/shop/products/Dubai_downtown_night_scene_UAE_Wall_Mural_Wallpaper_a_1400x.jpg?v=1578614281",
+        "https://i.pinimg.com/736x/b8/08/9a/b8089a847c7ce5acb5af0543faa7525d.jpg",
       description: `Experience Dubai's breathtaking night skyline, where dazzling skyscrapers light up the city. Book your ticket now to immerse yourself in the luxury and excitement of this vibrant metropolis.`,
     },
     {
       name: "Delhi",
       image:
-        "https://afar.brightspotcdn.com/dims4/default/a6f4c32/2147483647/strip/true/crop/4993x2649+0+519/resize/2880x1528!/format/webp/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2F9e%2Ff8%2F6b5f8a0948278e15b5eeeb36c03e%2Fshutterstock-1076644442.jpg",
+        "https://delhiphototour.com/wp-content/uploads/2016/02/photo-walk-of-monuments.jpg",
       description: `Book your journey to Delhi and experience its historical splendor! Visit the majestic Red Fort, the iconic Qutub Minar, and the serene Humayun's Tomb. Dive into a city rich in history and charm!`,
     },
   ];
@@ -66,7 +66,7 @@ export default function Itineraries() {
               <img
                 src={d.image}
                 alt={d.name}
-                className="w-full h-40 object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-40"
+                className="w-full h-50 object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-40"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 className="text-xl font-bold text-black">{d.name}</h3>
