@@ -54,7 +54,7 @@ Book your journey to Delhi and experience its historical splendor! Visit the maj
       <div className="flex overflow-hidden items-center space-x-4 destination-list">
         {/* Destination Cards */}
         <div
-          className="flex transition-transform duration-700 ease-in-out m-6 pl-5"
+          className="flex transition-transform duration-700 ease-in-out m-6 pl-5 text-outline"
           style={{
             transform: `translateX(-${activeIndex * 80}%)`,
             width: "400px",
@@ -63,7 +63,7 @@ Book your journey to Delhi and experience its historical splendor! Visit the maj
           {destinations.map((d, index) => (
             <div
               key={index}
-              className="min-w-[80%] max-w-[80%] flex-shrink-0 bg-white rounded-lg shadow-lg mr-9"
+              className="min-w-[80%] max-w-[80%] flex-shrink-0 bg-white rounded-lg shadow-lg mr-9 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
             >
               <img
                 src={d.image}

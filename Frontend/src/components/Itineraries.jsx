@@ -70,8 +70,10 @@ export default function Itineraries() {
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 className="text-xl font-bold text-black">{d.name}</h3>
-                <p className="text-sm text-gray-600 mt-2">{d.description}</p>
-                <button className="btn mt-4 bg-black text-gray-300">
+                <p className="text-sm text-white-600 mt-2 drop-shadow-[0_1.2px_1.2px_rgba(255,125,0,0.8)]">
+                  {d.description}
+                </p>
+                <button className="btn mt-4 bg-black text-white hover:text-black hover:bg-blue-200">
                   Book Now
                 </button>
               </div>
